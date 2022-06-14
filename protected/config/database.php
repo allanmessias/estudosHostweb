@@ -3,9 +3,9 @@
 // This is the database connection configuration.
 return array(
 	'class' => 'system.db.CDbConnection',
-	'connectionString' => 'sqlsrv:Server=10.177.48.140; Database=SNETD-TESTE;', 
-	'username' => 'nsnteste',
-	'password' => 'nsnteste',
-	'charset' => 'GB2312',
+	'connectionString' => 'mysql:host=localhost; dbname=testeYii;', 
+	'username' => 'root',
+	'password' => '',
+	'charset' => 'utf8',
     'schemaCachingDuration' => 0,
 );

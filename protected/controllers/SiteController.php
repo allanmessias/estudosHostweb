@@ -113,8 +113,15 @@ class SiteController extends Controller
 	 * @return array
 	 */
 	public function actionUsers()
-    {
-        $allUsers=User::model()->findAll();
-        return $this->render('users', ['allUsers'=>$allUsers]); 
+    {	
+		try 
+		{
+			$allUsers=User::model()->findAll();
+			return $this->render('users', ['allUsers'=>$allUsers]); 
+		}
+		catch(Exception $e) 
+		{
+			echo 'ERRO:' . $e->getMessage(); 
+		}
     }
 }
