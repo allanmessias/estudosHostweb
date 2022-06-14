@@ -1,0 +1,524 @@
+2022/06/14 18:16:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demoyii/index.php?r=site/users
+HTTP_REFERER=http://localhost/demoyii/index.php
+---
+2022/06/14 18:22:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demoyii/index.php?r=site/users
+HTTP_REFERER=http://localhost/demoyii/
+---
+2022/06/14 18:25:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demoyii/site/users
+HTTP_REFERER=http://localhost/demoyii/index.php/site/index
+---
+2022/06/14 18:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demoyii/site/users
+HTTP_REFERER=http://localhost/demoyii/site/page?view=about
+---
+2022/06/14 18:29:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demoyii/site/users
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:29:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:29:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:29:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/site/page?view=about
+---
+2022/06/14 18:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/site/page?view=about
+---
+2022/06/14 18:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/site/page?view=about
+---
+2022/06/14 18:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/site/page?view=about
+---
+2022/06/14 18:30:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/site/page?view=about
+---
+2022/06/14 18:30:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/site/page?view=about
+---
+2022/06/14 18:30:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/site/page?view=about
+---
+2022/06/14 18:30:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/site/page?view=about
+---
+2022/06/14 18:30:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/site/contact
+---
+2022/06/14 18:30:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/5e2914df/jquery.js".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e2914df...')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/assets/5e2914df/jquery.js
+HTTP_REFERER=http://localhost/demoyii/site/contact
+---
+2022/06/14 18:30:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/site/contact
+---
+2022/06/14 18:30:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/5e2914df/jquery.yiiactiveform.js".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/5e2914df...')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/assets/5e2914df/jquery.yiiactiveform.js
+HTTP_REFERER=http://localhost/demoyii/site/contact
+---
+2022/06/14 18:30:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/site/contact
+---
+2022/06/14 18:30:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/site/contact
+---
+2022/06/14 18:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demoyii/site/users
+HTTP_REFERER=http://localhost/demoyii/site/contact
+---
+2022/06/14 18:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:30:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:30:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:30:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:30:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demoyii/site/users
+HTTP_REFERER=http://localhost/demoyii/site/contact
+---
+2022/06/14 18:31:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:31:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:31:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:31:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demoyii/site/users
+HTTP_REFERER=http://localhost/demoyii/site/contact
+---
+2022/06/14 18:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:31:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:31:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/site/users
+---
+2022/06/14 18:32:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/index.php/site/index
+---
+2022/06/14 18:32:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/index.php/site/index
+---
+2022/06/14 18:32:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/index.php/site/index
+---
+2022/06/14 18:32:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/index.php/site/index
+---
+2022/06/14 18:32:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/
+---
+2022/06/14 18:32:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/
+---
+2022/06/14 18:32:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/
+---
+2022/06/14 18:32:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/
+---
+2022/06/14 18:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/main.css
+HTTP_REFERER=http://localhost/demoyii/
+---
+2022/06/14 18:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/screen.css
+HTTP_REFERER=http://localhost/demoyii/
+---
+2022/06/14 18:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/print.css
+HTTP_REFERER=http://localhost/demoyii/
+---
+2022/06/14 18:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demoyii/css/form.css
+HTTP_REFERER=http://localhost/demoyii/
+---
+2022/06/14 18:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demoyii/index.php?r=site/users
+HTTP_REFERER=http://localhost/demoyii/
+---
+2022/06/14 18:47:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demoyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demoyii/index.php?r=site/users
+HTTP_REFERER=http://localhost/demoyii/index.php?r=site/index
+---
