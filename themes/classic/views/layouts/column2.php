@@ -6,7 +6,7 @@
 			<?php
 				$this->widget('zii.widgets.CMenu', array(
 					'items'=>$this->menu,
-					'htmlOptions'=>array('class'=>'nav nav-pills pull-right'),
+					'htmlOptions'=>array('class'=>'nav nav-pills pull-left'),
 				));
 			?>
 		</div>

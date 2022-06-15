@@ -10,6 +10,7 @@
     <!-- Le styles -->
     <link href="<?php echo Yii::app()->theme->baseUrl;?>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo Yii::app()->theme->baseUrl;?>/css/responsive.min.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->theme->baseUrl?>/css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -22,6 +23,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo Yii::app()->theme->baseUrl;?>/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="<?php echo Yii::app()->theme->baseUrl;?>/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl;?>/ico/favicon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
   </head>
   <body>
 
@@ -33,22 +35,23 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="#">My app</a>
+      <a class="brand" href="?r=site/index">My app</a>
 
       <div class="nav-collapse collapse pull-right">
-        <?php $this->widget('zii.widgets.CMenu',array(
-          'htmlOptions'=>array("class"=>"nav"),
-          'items'=>array(
-            array('label'=>'Home', 'url'=>array('/site/index')),
-            array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-            array('label'=>'Contact', 'url'=>array('/site/contact')),
-            array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-            array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+        <!-- Yii widget para implementação do NavBar -->
+        <?php $this->widget('zii.widgets.CMenu', array(
+          'htmlOptions' => array('class' => 'nav'),
+          'items' => array(
+            array('label' => 'Home', 'url' => array('site/index')),
+            array('label'=> 'Login', 'url' => array('site/login'), 'visible' => Yii::app()->user->isGuest),
+            array('label' => 'Contact', 'url' => array('site/contact')),
+            array('label' => 'Logout ('.Yii::app()->user->name . ')', 'url'=>array('/site/logout'), 'visible' => !Yii::app()->user->isGuest),
+            array('label' => 'Users', 'url'=>array('/site/users'), 'visible' => !Yii::app()->user->isGuest),
           ),
-        )); ?>
+          ));  ?>
 
+        
       </div><!--/.nav-collapse -->
-
     </div>
   </div>
 </div>

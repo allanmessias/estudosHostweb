@@ -1,0 +1,20 @@
+.form-inline {
+    display: flex;
+    flex-direction: row;
+    margin: 12px;
+}
+
+.form-control {
+    margin: 3px;
+    flex-wrap: wrap;
+}
+
+.search-button {
+    position: relative !important;
+    left: -30px !important;
+    padding: 5px;
+    border: none;
+    background: none;
+    color: black;
+}
+
