@@ -7,7 +7,7 @@ class UserController extends Controller
      *
      * @return view
      */
-    public function actionIndex()
+    public function actionSearch()
     {
         $searchUser = CHttpRequest::getPost('search');
         try {
@@ -15,7 +15,7 @@ class UserController extends Controller
                 $criteria=new CDbCriteria;
                 $criteria->compare('username', $searchUser, true);
                 $user = User::model()->findAll($criteria);
-                return $this->render('index', array('user' => $user));
+                return $this->render('search', array('user' => $user));
             }
             throw new Exception('erro fodase');
         } catch (Exception $e) {

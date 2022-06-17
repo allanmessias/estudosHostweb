@@ -7,12 +7,23 @@
  */
 class User extends CActiveRecord
 {
+	// tabela para uso na hostweb
+	// /**
+	//  * @return string the associated database table name
+	//  */
+	// public function tableName()
+	// {
+	// 	return 'tbl_user_yii_doc';
+	// }
+
 	/**
+	 * 
+	 *
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'tbl_user_yii_doc';
+		return 'tbl_user'; 
 	}
 
 	/**

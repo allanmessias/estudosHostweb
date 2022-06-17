@@ -1,18 +1,21 @@
-.form-inline {
+.brand {
+    position: absolute;
+}
+
+.form-container {
     display: flex;
-    flex-direction: row;
-    margin: 12px;
+    position:relative;
 }
 
-.form-control {
-    margin: 3px;
-    flex-wrap: wrap;
+.form-inline {
+    position: relative;
+    top: 35%;
 }
 
-.search-button {
-    position: relative !important;
-    left: -30px !important;
-    padding: 5px;
+#search-button {
+    position: relative;
+    right: 15%;
+    top: 25%;
     border: none;
     background: none;
     color: black;
