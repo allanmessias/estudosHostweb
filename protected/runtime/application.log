@@ -7420,3 +7420,53 @@ Stack trace:
 REQUEST_URI=/estudosHostweb/?r=countries
 in C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php (13)
 in C:\xampp\htdocs\estudosHostweb\index.php (13)
+2022/06/20 19:07:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "enabled" solicitada.' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('enabled')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('enabled')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/enabl...')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=countries/enabled&id=5
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=countries/index
+---
+2022/06/20 19:12:20 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php:94)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(286): CountriesController->runAction()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CountriesController->run()
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\estudosHostweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/estudosHostweb/index.php?r=countries/enabled&id=5
+in C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php (94)
+in C:\xampp\htdocs\estudosHostweb\index.php (13)
+2022/06/20 19:13:06 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php:94)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(286): CountriesController->runAction()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CountriesController->run()
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\estudosHostweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/estudosHostweb/index.php?r=countries/enabled&id=5
+in C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php (94)
+in C:\xampp\htdocs\estudosHostweb\index.php (13)
+2022/06/20 19:13:42 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php:94)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(286): CountriesController->runAction()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CountriesController->run()
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\estudosHostweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/estudosHostweb/index.php?r=countries/enabled&id=5
+in C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php (94)
+in C:\xampp\htdocs\estudosHostweb\index.php (13)
