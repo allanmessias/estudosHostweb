@@ -7377,3 +7377,46 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/estudosHostweb/index.php?r=countries/user
 ---
+2022/06/20 17:14:55 [error] [exception.CException] exception 'CException' with message 'Countries and its behaviors do not have a method or closure named "get".' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get', Array)
+#1 C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php(12): CActiveRecord->__call('get', Array)
+#2 C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php(12): Countries->get()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('countries')
+#9 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/estudosHostweb/?r=countries
+---
+2022/06/20 17:16:22 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "get".' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php(13): CComponent->__call('get', Array)
+#1 C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php(13): CHttpRequest->get()
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('countries')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/estudosHostweb/?r=countries
+---
+2022/06/20 17:19:07 [error] [php] Missing argument 1 for CHttpRequest::getParam(), called in C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php on line 13 and defined (C:\xampp\htdocs\yii-1.1.16\framework\web\CHttpRequest.php:171)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(286): CountriesController->runAction()
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CountriesController->run()
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\estudosHostweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/estudosHostweb/?r=countries
+in C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php (13)
+in C:\xampp\htdocs\estudosHostweb\index.php (13)
