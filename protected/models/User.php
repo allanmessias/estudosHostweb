@@ -11,20 +11,20 @@ class User extends CActiveRecord
 	// /**
 	//  * @return string the associated database table name
 	//  */
-	// public function tableName()
-	// {
-	// 	return 'tbl_user_yii_doc';
-	// }
-
-	/**
-	 * 
-	 *
-	 * @return string the associated database table name
-	 */
 	public function tableName()
 	{
-		return 'tbl_user'; 
+		return 'tbl_user_yii_doc';
 	}
+
+	// /**
+	//  * 
+	//  *
+	//  * @return string the associated database table name
+	//  */
+	// public function tableName()
+	// {
+	// 	return 'tbl_user'; 
+	// }
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -36,7 +36,7 @@ class User extends CActiveRecord
 		return array(
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('', 'safe', 'on'=>'search'),
+			array('username, password, email', 'safe', 'on'=>'insert'),
 		);
 	}
 

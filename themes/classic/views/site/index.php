@@ -39,6 +39,8 @@
         'validateOnSubmit'=>true,
       ),
     )); ?>
+
+    <?php $model = new LoginForm; ?>
       
     <?php echo $form->labelEx($model,'username'); ?>
     <?php echo $form->textField($model,'username',array("class"=>"input-block-level","placeholder"=>"Username")); ?>
@@ -60,12 +62,12 @@
   <div class="well">
     <form class="form-signin" style="text-align: left" id="login-form" action="#" method="post">
      
-      <label class="required">Nombres <span class="required">*</span></label>   
-        <input class="input-block-level" placeholder="Nombres" type="text">
+      <label class="required">Names <span class="required">*</span></label>   
+        <input class="input-block-level" placeholder="Names" type="text">
       <label class="required">Email <span class="required">*</span></label>   
         <input class="input-block-level" placeholder="Email" type="text">
      
-      <label class="control-label required">Contraseña <span class="required">*</span></label>   
+      <label class="control-label required">Password <span class="required">*</span></label>   
         <input class="input-block-level" placeholder="Password" type="password">
       
       <input class="btn btn-primary pull-right" type="submit" value="Registrarme"> 
