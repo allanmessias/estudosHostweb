@@ -9,10 +9,7 @@ class CountriesController extends Controller
      */
     public function actionIndex() 
     {
-        Yii::import('application.Test');
-        $me = new Test; 
-        echo $me->hi(); 
-        //include(dirname(__FILE__)."/Test.php"); 
+        echo Yii::app()->happy->hi();
         $countries=Countries::model()->findAll(); 
         return $this->render('index', array('countries'=>$countries)); 
     }
@@ -33,7 +30,7 @@ class CountriesController extends Controller
                 if($model->validate()) {
                     /**  Salva o registro no banco de dados caso o atributo isNewRecord seja true */
                     $model->save(); 
-                    Yii::app()->user->setFlash('sucesso', 'País salvo com sucesso'); 
+                    Yii::app()->user->setFlash('success', 'País salvo com sucesso'); 
                     $this->redirect(array('countries/index')); 
                  } else {
                     Yii::app()->user->setFlash('erro', 'Não foi possível cadastrar o país');

@@ -7526,3 +7526,16 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/estudosHostweb/index.php?r=site/countries
 ---
+2022/06/21 15:10:17 [error] [exception.CException] exception 'CException' with message 'O alias "ext.FHappy" é inválido. Assegure-se de que ele aponta para um arquivo PHP existente.' in C:\xampp\htdocs\yii-1.1.16\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\YiiBase.php(196): YiiBase::import('ext.FHappy', true)
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModule.php(530): CModule->getComponent('happy')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(167): CModule->preloadComponents()
+#4 C:\xampp\htdocs\yii-1.1.16\framework\YiiBase.php(125): CApplication->__construct('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\estudosHostweb\index.php(13): YiiBase::createWebApplication('C:\\xampp\\htdocs...')
+#7 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=countries/index
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=countries/create
+---
