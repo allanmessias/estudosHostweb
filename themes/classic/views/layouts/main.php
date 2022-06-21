@@ -94,7 +94,6 @@
           <?php foreach ($msgs as $type => $message) : ?>
             <div class="alert alert-<?php echo $type ?>">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4><?php echo ucfirst($type) ?>!</h4>
               <?php echo $message ?>
             </div>
           <?php endforeach; ?>
