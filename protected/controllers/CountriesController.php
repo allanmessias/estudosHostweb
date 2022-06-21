@@ -29,8 +29,10 @@ class CountriesController extends Controller
                 if($model->validate()) {
                     /**  Salva o registro no banco de dados caso o atributo isNewRecord seja true */
                     $model->save(); 
-                    Yii::app()->user->setFlash('success', 'País salvo com sucesso'); 
+                    Yii::app()->user->setFlash('sucesso', 'País salvo com sucesso'); 
                     $this->redirect(array('countries/index')); 
+                 } else {
+                    Yii::app()->user->setFlash('erro', 'Não foi possível cadastrar o país');
                  }
              }             
         } catch (Exception $e) {
