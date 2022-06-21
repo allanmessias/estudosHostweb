@@ -9,7 +9,17 @@ class CountriesController extends Controller
      */
     public function actionIndex() 
     {
-        echo Yii::app()->happy->hi();
+        $request = new CHttpRequest;
+        
+        if(!empty($request->getQuery('excel'))) {
+            // Renderiza parcialmente a view 'excel', passando como conteúdo a consulta no banco de dados
+            $content = $this->renderPartial('excel', array('model' => Countries::model()->findAll()), true);
+            
+            // Faz o download da consulta em arquivo .xls, passando como conteúdo a consulta realizada na
+            $request->sendFile('test.xls', $content); 
+        }
+        
+
         $countries=Countries::model()->findAll(); 
         return $this->render('index', array('countries'=>$countries)); 
     }
@@ -22,6 +32,11 @@ class CountriesController extends Controller
     public function actionCreate()
     {
         $model = new Countries();
+        /**
+         * Posso utilizar o request por meio do componente application
+         * Ex.: Yii::app()->request->metodoDoCHttpRequest, porém não deixa o código legível
+         * Pois a classe CHttpRequest possui todos os métodos necessários e quem for ler o código vai saber de onde estou usando.
+         */
         $request = new CHttpRequest;
         try {
             if(!empty($request->getPost('Countries'))) {

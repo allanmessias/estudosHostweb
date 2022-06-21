@@ -3,6 +3,11 @@
 <?php echo CHtml::link('Criar País', array('create'))?>
 </button>
 
+<button class="btn btn-primary">
+<?php echo CHtml::link('Exportar para Excel', array('index', 'excel' => 1))?>
+</button>
+
+
 <?php foreach ($countries as $data) : ?>
 
     <div class="flex-container">
