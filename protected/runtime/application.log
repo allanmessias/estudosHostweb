@@ -7539,3 +7539,14 @@ Stack trace:
 REQUEST_URI=/estudosHostweb/index.php?r=countries/index
 HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=countries/create
 ---
+2022/06/21 16:37:14 [error] [php] Array to string conversion (C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(286): CountriesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CountriesController->run()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\estudosHostweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/estudosHostweb/index.php?r=countries/index&0=excel
+in C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php (14)
+in C:\xampp\htdocs\estudosHostweb\index.php (13)
