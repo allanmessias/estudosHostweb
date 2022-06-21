@@ -1,4 +1,8 @@
 <h1>Países</h1>
+<button class="btn btn-primary">
+<?php echo CHtml::link('Criar País', array('create'))?>
+</button>
+
 <?php foreach ($countries as $data) : ?>
 
     <div class="flex-container">
@@ -53,4 +57,5 @@
     a {
         color: white;
     }
+
 </style>
