@@ -9,6 +9,10 @@ class CountriesController extends Controller
      */
     public function actionIndex() 
     {
+        Yii::import('application.Test');
+        $me = new Test; 
+        echo $me->hi(); 
+        //include(dirname(__FILE__)."/Test.php"); 
         $countries=Countries::model()->findAll(); 
         return $this->render('index', array('countries'=>$countries)); 
     }
