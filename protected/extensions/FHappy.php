@@ -6,7 +6,7 @@ class FHappy extends CApplicationComponent
 
     public function init()
     {
-        echo "Inicializado";
+        // echo "Inicializado";
     }
 
     public function hi()
