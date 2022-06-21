@@ -7470,3 +7470,59 @@ Stack trace:
 REQUEST_URI=/estudosHostweb/index.php?r=countries/enabled&id=5
 in C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php (94)
 in C:\xampp\htdocs\estudosHostweb\index.php (13)
+2022/06/21 13:10:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "view" solicitada.' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/view')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=countries/view&id=5
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=countries/index
+---
+2022/06/21 13:21:25 [error] [exception.CException] exception 'CException' with message 'A propriedade "CDetailView.itemsCssClass" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CWidgetFactory.php(161): CComponent->__set('itemsCssClass', 'table table-str...')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CountriesController), 'zii.widgets.CDe...', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 C:\xampp\htdocs\estudosHostweb\protected\views\countries\view.php(5): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php(108): CController->render('view', Array)
+#9 [internal function]: CountriesController->actionView('5')
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CountriesController), Array)
+#11 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CountriesController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/view')
+#17 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=countries/view&id=5
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=countries/index
+---
+2022/06/21 13:24:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "countries" solicitada.' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('countries')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('countries')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/countries')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=site/countries
+---
+2022/06/21 13:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "countries" solicitada.' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(270): CController->missingAction('countries')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('countries')
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('site/countries')
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=site/countries
+---
