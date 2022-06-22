@@ -16,22 +16,9 @@ class CountriesController extends Controller
          *  $this->assignUserRole();
          *  $this->createUserRole();
          */
+
+
        
-        
-        echo Yii::app()->user->id; 
-        if(Yii::app()->user->checkAccess('admin')) {
-            echo 'sou admin fodase';   
-        }
-
-        $request = new CHttpRequest;
-
-        if (!empty($request->getQuery('excel'))) {
-            // Renderiza parcialmente a view 'excel', passando como conteúdo a consulta no banco de dados
-            $content = $this->renderPartial('excel', array('model' => Countries::model()->findAll()), true);
-
-            // Faz o download da consulta em arquivo .xls, passando como conteúdo a consulta realizada na
-            $request->sendFile('test.xls', $content);
-        }
 
 
         $countries = Countries::model()->findAll();
@@ -184,6 +171,18 @@ class CountriesController extends Controller
             }
         } catch (Exception $e) {
             echo 'ERRO ' . $e->getMessage();
+        }
+    }
+
+    public function actionDownloadExcel() 
+    {
+        $request = new CHttpRequest;
+        if (!empty($request->getQuery('excel'))) {
+            // Renderiza parcialmente a view 'excel', passando como conteúdo a consulta no banco de dados
+            $content = $this->renderPartial('excel', array('model' => Countries::model()->findAll()), true);
+
+            // Faz o download da consulta em arquivo .xls, passando como conteúdo a consulta realizada na
+            $request->sendFile('test.xls', $content);
         }
     }
 }

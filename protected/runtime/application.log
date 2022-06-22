@@ -7751,3 +7751,451 @@ Stack trace:
 REQUEST_URI=/estudosHostweb/index.php?r=user/assign
 HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/view&id=1
 ---
+2022/06/22 16:37:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Você não está autorizado a realizar essa operação.' in C:\xampp\htdocs\yii-1.1.16\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Voc\xC3\xAA n\xC3\xA3o est\xC3...')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/admin
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/view&id=1
+---
+2022/06/22 16:38:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Você não está autorizado a realizar essa operação.' in C:\xampp\htdocs\yii-1.1.16\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Voc\xC3\xAA n\xC3\xA3o est\xC3...')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/admin
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/view&id=1
+---
+2022/06/22 16:39:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Você não está autorizado a realizar essa operação.' in C:\xampp\htdocs\yii-1.1.16\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Voc\xC3\xAA n\xC3\xA3o est\xC3...')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/admin
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/view&id=1
+---
+2022/06/22 16:47:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Sua requisição é inválida.' in C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#10 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view
+---
+2022/06/22 16:48:01 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(2435): CModel->getValidators('name')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RoleForm), 'name', Array)
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RoleForm), 'name', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(34): CActiveForm->textField(Object(RoleForm), 'name')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 16:49:58 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(2435): CModel->getValidators('name')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RoleForm), 'name', Array)
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RoleForm), 'name', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(34): CActiveForm->textField(Object(RoleForm), 'name')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 16:51:01 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(304): CModel->getValidators('name')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1513): CModel->isAttributeRequired('name')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(RoleForm), 'name', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(34): CActiveForm->labelEx(Object(RoleForm), 'name')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 16:53:53 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(304): CModel->getValidators('name')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1513): CModel->isAttributeRequired('name')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(RoleForm), 'name', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(34): CActiveForm->labelEx(Object(RoleForm), 'name')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 16:59:52 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(304): CModel->getValidators('name')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1513): CModel->isAttributeRequired('name')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(RoleForm), 'name', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(34): CActiveForm->labelEx(Object(RoleForm), 'name')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 17:01:11 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(304): CModel->getValidators('name')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1513): CModel->isAttributeRequired('name')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(RoleForm), 'name', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(34): CActiveForm->labelEx(Object(RoleForm), 'name')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 17:02:29 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(304): CModel->getValidators('name')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1513): CModel->isAttributeRequired('name')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(RoleForm), 'name', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(35): CActiveForm->labelEx(Object(RoleForm), 'name')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 17:03:18 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(304): CModel->getValidators('description')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1513): CModel->isAttributeRequired('description')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(RoleForm), 'description', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(35): CActiveForm->labelEx(Object(RoleForm), 'description')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 17:03:32 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(304): CModel->getValidators('teste')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1513): CModel->isAttributeRequired('teste')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(RoleForm), 'teste', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(35): CActiveForm->labelEx(Object(RoleForm), 'teste')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 17:05:22 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(304): CModel->getValidators('name')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1513): CModel->isAttributeRequired('name')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(RoleForm), 'name', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(35): CActiveForm->labelEx(Object(RoleForm), 'name')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 17:06:18 [error] [exception.CException] exception 'CException' with message 'A propriedade "CTypeValidator.0" não está definida.' in C:\xampp\htdocs\yii-1.1.16\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\validators\CValidator.php(177): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(287): CValidator::createValidator('type', Object(RoleForm), 'name', Array)
+#2 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\base\CModel.php(304): CModel->getValidators('name')
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\helpers\CHtml.php(1513): CModel->isAttributeRequired('name')
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(RoleForm), 'name', Array)
+#6 C:\xampp\htdocs\estudosHostweb\protected\views\user\view.php(35): CActiveForm->labelEx(Object(RoleForm), 'name')
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\estudosHostweb\protected\controllers\UserController.php(59): CController->render('view', Array)
+#12 [internal function]: UserController->actionView('1')
+#13 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#14 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#25 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\estudosHostweb\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/estudosHostweb/index.php?r=user/view&id=1
+HTTP_REFERER=http://localhost/estudosHostweb/index.php?r=user/
+---
+2022/06/22 18:58:45 [error] [php] Undefined variable: model (C:\xampp\htdocs\estudosHostweb\protected\views\countries\index.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(869): CountriesController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(782): CountriesController->renderPartial()
+#2 C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php(38): CountriesController->render()
+#3 C:\xampp\htdocs\yii-1.1.16\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#4 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(286): CountriesController->runAction()
+#6 C:\xampp\htdocs\yii-1.1.16\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(282): CountriesController->run()
+#8 C:\xampp\htdocs\yii-1.1.16\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.16\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\estudosHostweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/estudosHostweb/index.php?r=countries
+in C:\xampp\htdocs\estudosHostweb\protected\views\countries\index.php (13)
+in C:\xampp\htdocs\estudosHostweb\protected\controllers\CountriesController.php (38)
+in C:\xampp\htdocs\estudosHostweb\index.php (13)
