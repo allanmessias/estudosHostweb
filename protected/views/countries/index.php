@@ -4,8 +4,9 @@
 </button>
 
 <button class="btn btn-primary">
-<?php echo CHtml::link('Exportar para Excel', array('index', 'excel' => 1))?>
+<?php echo CHtml::link('Exportar para Excel', array('downloadexcel', 'excel' => 1))?>
 </button>
+
 
 
 <?php foreach ($countries as $data) : ?>

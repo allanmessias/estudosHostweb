@@ -9,31 +9,16 @@ class CountriesController extends Controller
      */
     public function actionIndex()
     {
-        /**
-         * O componente user é utilizado em toda a aplicação, garantindo que o usuário esteja
-         * logado e autenticado para realizar todas as requisições na página.
+        /** 
+         * Executar funções apenas uma vez, pois elas fazem inserções no BD utilizando a classe
+         * CBdAuthManager como pai.
          * 
-         * Pode ser utilizado criando uma instância de CWebUser ou pela componentização do Yii, como abaixo
-         * Para ser utilizado, ele necessita estar junto de uma identidade, no caso, nesta aplicação protótipo ela está localizada em components
-         * A identidade, ou identity, realiza o algoritmo de autenticação para o usuário 
+         *  $this->assignUserRole();
+         *  $this->createUserRole();
          */
-        // echo Yii::app()->user->isGuest;
-        // var_dump(Yii::app()->user->flashes);
-        // var_dump(Yii::app()->user->behaviors);
-        // echo Yii::app()->user->guestName;
-        // echo Yii::app()->user->name;
-        // echo Yii::app()->user->returnUrl;
 
-        
-        $request = new CHttpRequest;
 
-        if (!empty($request->getQuery('excel'))) {
-            // Renderiza parcialmente a view 'excel', passando como conteúdo a consulta no banco de dados
-            $content = $this->renderPartial('excel', array('model' => Countries::model()->findAll()), true);
-
-            // Faz o download da consulta em arquivo .xls, passando como conteúdo a consulta realizada na
-            $request->sendFile('test.xls', $content);
-        }
+       
 
 
         $countries = Countries::model()->findAll();
@@ -148,5 +133,56 @@ class CountriesController extends Controller
     {
         $model = Countries::model()->findByPk($id);
         return $this->render('view', array('model' => $model));
+    }
+    
+    /**
+     * Cria permissão para determinado usuário
+     * @var auth $user
+     * @return role $user
+     */
+    private function createUserRole()
+    {
+        $auth = Yii::app()->authManager;
+
+        try {
+            if (!empty($auth)) {
+                $user = $auth->createRole('admin');
+                return $user;
+            }
+        } catch (Exception $e) {
+            echo 'ERRO ' . $e->getMessage();
+        }
+        return null;
+    }
+    
+    /**
+     * Define a permissão para o usuário selecionado
+     * @var auth $user
+     * @return assigned $user 
+     */
+    private function assignUserRole()
+    {
+        $auth = Yii::app()->authManager;
+
+        try {
+            if (!empty($auth)) {
+                $user = $auth->assign('admin', 1);
+                return $user;
+            }
+        } catch (Exception $e) {
+            echo 'ERRO ' . $e->getMessage();
+        }
+    }
+
+    public function actionDownloadExcel() 
+    {
+        $request = new CHttpRequest;
+        if (!empty($request->getQuery('excel'))) {
+            // Renderiza parcialmente a view 'excel', passando como conteúdo a consulta no banco de dados
+            $content = $this->renderPartial('excel', array('model' => Countries::model()->findAll()), true);
+
+            // Faz o download da consulta em arquivo .xls, passando como conteúdo a consulta realizada na
+            $request->sendFile('test.xls', $content);
+        }
     }
 }

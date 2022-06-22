@@ -31,4 +31,13 @@ class Countries extends CActiveRecord
 
         ); 
     }
+
+    public function search()
+    {
+        $criteria = new CDbCriteria;
+
+        return new CActiveDataProvider('Countries', array(
+            'criteria' => $criteria
+        )); 
+    }
 }

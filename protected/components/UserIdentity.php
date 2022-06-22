@@ -37,4 +37,8 @@ class UserIdentity extends CUserIdentity
 		}
 		return !$this->errorCode; 
 	}
+
+	public function getId() {
+		return $this->_id; 
+	}
 }

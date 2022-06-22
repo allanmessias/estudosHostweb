@@ -34,6 +34,10 @@ return array(
 	// application components
 	// Exemplo: Yii::app()->user ou Yi::app()->happy
 	'components'=>array(
+		'authManager' => array(
+			'class' => 'CDbAuthManager',
+			'connectionID' => 'db',
+		),
 		'happy' => array(
 			'class' => 'ext.FHappy',
 			'trato' => 1, 

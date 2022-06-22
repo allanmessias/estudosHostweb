@@ -28,7 +28,7 @@ class UserController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'assign'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -37,7 +37,7 @@ class UserController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete', 'search'),
-				'users'=>array('admin'),
+				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -51,8 +51,11 @@ class UserController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$role = new RoleForm; 
+
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+			'role' => $role
 		));
 	}
 
@@ -143,6 +146,26 @@ class UserController extends Controller
 		$this->render('admin',array(
 			'model'=>$model,
 		));
+	}
+	
+	/**
+	 * Da permissão para determinado usuário pelo id 
+	 * 
+	 * checkAccess -> retorna true se há acesso para os parametros passados no get do nome e id, 
+	 * revoke -> revoga o acesso passando os parameteros passados no get e id, 
+	 * assign -> dá permissão para o usuário passando os parametros no get e id.
+	 * 
+	 * @param  mixed $id
+	 * @return void
+	 */
+	public function actionAssign($id)
+	{
+		if(Yii::app()->authManager->checkAccess($_GET['item'], $id)) {
+			Yii::app()->authManager->revoke($_GET['item'], $id); 
+		} else {
+			Yii::app()->authManager->assign($_GET['item'], $id);
+		}
+		$this->redirect(array('view', 'id'=>$id)); 
 	}
 
 	/**
