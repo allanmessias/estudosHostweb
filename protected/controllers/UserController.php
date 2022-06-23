@@ -52,6 +52,8 @@ class UserController extends Controller
 	public function actionView($id)
 	{
 		$role = new RoleForm; 
+	
+		$this->createRole($id); 
 
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
@@ -216,5 +218,21 @@ class UserController extends Controller
 			
 		echo 'ERRO' . $e->getMessage(); 		
 		}
+	} 
+
+	private function createRole($id)
+	{
+		$role = new RoleForm;
+
+		if(isset($_POST['RoleForm'])) {
+			$role->attributes=$_POST['RoleForm']; 
+			if($role->validate()) {
+				Yii::app()->authManager->createRole($role->name, $role->description);
+				Yii::app()->authManager->assign($role->name, $id);
+				return $this->redirect(array('view', 'id'=> $id)); 
+			}
+		}
+
+		return 'NÃO FOI POSSIVEL ETC.. ';
 	} 
 }
