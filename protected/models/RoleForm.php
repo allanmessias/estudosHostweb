@@ -11,8 +11,17 @@ class RoleForm extends CFormModel
     public function rules ()
     {
         return array(
-           array('name, type', 'required'),
+           array('name, description', 'required'),
            array('description', 'safe'), 
+        ); 
+    }
+
+    public function attributeLabels()
+    {
+        return array(
+            'name' => 'Nome',
+            'description' => 'Descrição',
+            'type' => 'Tipo'
         ); 
     }
 }
