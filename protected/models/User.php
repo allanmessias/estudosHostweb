@@ -77,6 +77,7 @@ class User extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
+		$criteria->compare('username', $this->username, true); 
 
 		return new CActiveDataProvider('User', array(
 			'criteria'=>$criteria,

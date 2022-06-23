@@ -221,9 +221,8 @@ class UserController extends Controller
         $searchUser = CHttpRequest::getPost('search');
         try {
             if (!empty($searchUser)) {
-                $criteria=new CDbCriteria;
-                $criteria->compare('username', $searchUser, true);
-                $user = User::model()->findAll($criteria);
+                $user = new User('search');
+				$user->username = $searchUser;  
                 return $this->render('search', array('user' => $user));
             }
             throw new Exception('erro fodase');

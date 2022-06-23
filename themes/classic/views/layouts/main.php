@@ -56,6 +56,7 @@
           <!-- Creates Search Bar using active form -->
           <div class="form-container">
             <?php $form = $this->beginWidget('CActiveForm', array(
+              'method' => 'get', 
               'action' => '?r=user/search',
               'enableAjaxValidation' => true,
               'enableClientValidation' => true,

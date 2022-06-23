@@ -1,18 +1,17 @@
-<table class="table table-striped"> 
-    <thead>
-        <tr>
-            <th>id</th>
-            <th>Usuario</th>
-            <th>Email</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($user as $users): ?>
-            <tr>
-                <td><?=$users->id ?></td>
-            <td><?=$users->username ?></td>
-            <td><?=$users->email ?></td>
-        </tr>
-        <?php endforeach ?>
-    </tbody>
-</table>
+<h1></h1>
+
+<?php 
+$this->widget('zii.widgets.grid.CGridView', [
+    'itemsCssClass' => 'table table-striped',
+    'dataProvider' => $user->search(),
+    'filter' => $user,
+    'columns' => [
+        'id',
+        'username',
+        'email',
+        [
+            'class' => 'CButtonColumn'
+        ]
+    ] 
+]); 
+
