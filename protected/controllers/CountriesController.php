@@ -16,11 +16,7 @@ class CountriesController extends Controller
          *  $this->assignUserRole();
          *  $this->createUserRole();
          */
-
-
-       
-
-
+    
         $countries = Countries::model()->findAll();
         return $this->render('index', array('countries' => $countries));
     }

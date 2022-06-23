@@ -11,8 +11,8 @@ class RoleForm extends CFormModel
     public function rules ()
     {
         return array(
-           array('name, description', 'required'),
-           array('description', 'safe'), 
+           array('name, description', 'required', 'message'=>'aiiiii :( {attribute}'),
+           array('description', 'validating'), 
         ); 
     }
 
@@ -23,5 +23,12 @@ class RoleForm extends CFormModel
             'description' => 'Descrição',
             'type' => 'Tipo'
         ); 
+    }
+
+    public function validating($attribute, $param)
+    {
+        if($this->$attribute=='test') 
+            $this->addError($attribute, 'erro fdp');
+        
     }
 }

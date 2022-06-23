@@ -37,7 +37,7 @@ class UserController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete', 'search'),
-				'roles'=>array('admin'),
+				'roles'=>array('admin', 'super'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -53,7 +53,20 @@ class UserController extends Controller
 	{
 		$role = new RoleForm; 
 	
-		$this->createRole($id); 
+		if(isset($_POST['ajax']) and $_POST['ajax']==='role-form') {
+			echo CActiveForm::validate($role); 
+			Yii::app()->end(); 
+		}
+
+
+		if(isset($_POST['RoleForm'])) {
+			$role->attributes=$_POST['RoleForm']; 
+			if($role->validate()) {
+				Yii::app()->authManager->createRole($role->name, $role->description);
+				Yii::app()->authManager->assign($role->name, $id);
+				return $this->redirect(array('view', 'id'=> $id)); 
+			}
+		}
 
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
@@ -217,20 +230,6 @@ class UserController extends Controller
         } catch (Exception $e) {
 			
 		echo 'ERRO' . $e->getMessage(); 		
-		}
-	} 
-
-	private function createRole($id)
-	{
-		$role = new RoleForm;
-
-		if(isset($_POST['RoleForm'])) {
-			$role->attributes=$_POST['RoleForm']; 
-			if($role->validate()) {
-				Yii::app()->authManager->createRole($role->name, $role->description);
-				Yii::app()->authManager->assign($role->name, $id);
-				return $this->redirect(array('view', 'id'=> $id)); 
-			}
 		}
 	} 
 }
