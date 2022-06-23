@@ -232,7 +232,5 @@ class UserController extends Controller
 				return $this->redirect(array('view', 'id'=> $id)); 
 			}
 		}
-
-		return 'NÃO FOI POSSIVEL ETC.. ';
 	} 
 }

@@ -32,12 +32,15 @@ $this->menu = array(
 <div class="row-fluid">
 	<div class="span6">
 		<h1>Create Role</h1>
-		<?php $form = $this->beginWidget('CActiveForm') ?>
-
-		<?= $form->errorSummary($role) ?>
+		<?php $form = $this->beginWidget('CActiveForm', array(
+			'enableClientValidation' => true,
+			'clientOptions' => array(
+				'validateOnSubmit' => true,
+			)
+		)) ?>
 
 		<div class="row">
-			<?= $form->labelEx($role, 'nome'); ?>
+			<?= $form->labelEx($role, 'name'); ?>
 			<?= $form->textField($role, 'name'); ?>
 			<?= $form->error($role, 'name') ?>
 		</div>
