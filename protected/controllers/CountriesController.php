@@ -1,5 +1,6 @@
 <?php
 
+Yii::import('application.service.CountryService'); 
 class CountriesController extends Controller
 {
     /**
@@ -28,30 +29,23 @@ class CountriesController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Countries();
         /**
          * Posso utilizar o request por meio do componente application
          * Ex.: Yii::app()->request->metodoDoCHttpRequest, porém não deixa o código legível
          * Pois a classe CHttpRequest possui todos os métodos necessários e quem for ler o código vai saber de onde estou usando.
          */
+
         $request = new CHttpRequest;
-        try {
-            if (!empty($request->getPost('Countries'))) {
-                $model->attributes =  $request->getPost('Countries'); 
-                
-                if ($model->validate()) {
-                    /**  Salva o registro no banco de dados caso o atributo isNewRecord seja true */
-                    $model->save();
-                    Yii::app()->user->setFlash('success', 'País salvo com sucesso');
-                    $this->redirect(array('countries/index'));
-                } else {
-                    Yii::log('fodsae', 'error');
-                }
-            }
-        } catch (Exception $e) {
-            Yii::app()->user->setFlash('error', $e->getMessage());
-            Yii::log($e->getMessage(), 'error');
-        }
+        $service = new CountryService; 
+        
+        $country =  $request->getPost('Countries');
+
+        $model = $service->create($country); 
+        
+        if ($model) {
+            Yii::app()->user->setFlash('success', 'País salvo com sucesso');
+            $this->redirect(array('countries/index'));
+        } 
 
         return $this->render('create', array('model' => $model));
     }

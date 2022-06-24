@@ -9579,3 +9579,12 @@ in C:\xampp\htdocs\yii-1.1.16\estudosHostweb\index.php (13)
 2022/06/24 20:07:35 [error] [application] fodsae
 in C:\xampp\htdocs\yii-1.1.16\estudosHostweb\protected\controllers\CountriesController.php (48)
 in C:\xampp\htdocs\yii-1.1.16\estudosHostweb\index.php (13)
+2022/06/24 20:17:08 [error] [application] errou
+in C:\xampp\htdocs\yii-1.1.16\estudosHostweb\protected\controllers\CountriesController.php (48)
+in C:\xampp\htdocs\yii-1.1.16\estudosHostweb\index.php (13)
+2022/06/24 20:20:10 [error] [application] 
+in C:\xampp\htdocs\yii-1.1.16\estudosHostweb\protected\controllers\CountriesController.php (49)
+in C:\xampp\htdocs\yii-1.1.16\estudosHostweb\index.php (13)
+2022/06/24 20:23:48 [error] [application] Errou seu merda
+in C:\xampp\htdocs\yii-1.1.16\estudosHostweb\protected\controllers\CountriesController.php (53)
+in C:\xampp\htdocs\yii-1.1.16\estudosHostweb\index.php (13)
