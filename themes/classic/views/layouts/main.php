@@ -26,6 +26,11 @@
   <link rel="apple-touch-icon-precomposed" href="<?php echo Yii::app()->theme->baseUrl; ?>/ico/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl; ?>/ico/favicon.png">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery.js"></script>
+  <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap.min.js"></script>
+  <script src="<?php echo Yii::app()->baseUrl;?>/assets/5e2914df/jquery.yiiactiveform.js"></script>
+
 </head>
 
 <body>
@@ -185,8 +190,7 @@
     <!--close footer-credits container-->
   </section>
 
-  <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery.js"></script>
-  <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

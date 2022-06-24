@@ -12,7 +12,7 @@ return array(
 	'language' => 'pt_br', 
 
 	// preloading 'log' component
-	'preload'=>array('log', 'happy'),
+	'preload'=>array('log'),
 
 	// autoloading model and component classes
 	// Aqui é explicado o porque que não preciso importar as classes na hora de chamá-las
@@ -38,11 +38,6 @@ return array(
 			'class' => 'CDbAuthManager',
 			'connectionID' => 'db',
 		),
-		'happy' => array(
-			'class' => 'ext.FHappy',
-			'trato' => 1, 
-		), 
-
 		'user'=>array(
 			'class' => 'CWebUser', 
 			// enable cookie-based authentication

@@ -6,9 +6,13 @@ $this->widget('zii.widgets.grid.CGridView', array(
     'columns' => array(
         'id',
         'username',
-        'email',
-        'gerenciamento'
+        'email', 
+        ['name' => 'countries.name', 'header' => 'País'],
+        [
+            'header' => 'Ações',
+            'class' => 'CButtonColumn'
+        ]
+        
     )
-   
 ));
 ?>

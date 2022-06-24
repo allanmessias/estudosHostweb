@@ -37,19 +37,20 @@ class CountriesController extends Controller
         $request = new CHttpRequest;
         try {
             if (!empty($request->getPost('Countries'))) {
-                $model->attributes =  $request->getPost('Countries');
-
+                $model->attributes =  $request->getPost('Countries'); 
+                
                 if ($model->validate()) {
                     /**  Salva o registro no banco de dados caso o atributo isNewRecord seja true */
                     $model->save();
                     Yii::app()->user->setFlash('success', 'País salvo com sucesso');
                     $this->redirect(array('countries/index'));
                 } else {
-                    Yii::app()->user->setFlash('erro', 'Não foi possível cadastrar o país');
+                    Yii::log('fodsae', 'error');
                 }
             }
         } catch (Exception $e) {
-            echo 'ERRO ' . $e->getMessage();
+            Yii::app()->user->setFlash('error', $e->getMessage());
+            Yii::log($e->getMessage(), 'error');
         }
 
         return $this->render('create', array('model' => $model));
@@ -181,4 +182,5 @@ class CountriesController extends Controller
             $request->sendFile('test.xls', $content);
         }
     }
+
 }

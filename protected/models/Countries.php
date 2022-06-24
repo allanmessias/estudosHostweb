@@ -23,6 +23,8 @@ class Countries extends CActiveRecord
         return "tbl_paises"; 
     }
 
+    
+
     public function rules()
     {
         return array(

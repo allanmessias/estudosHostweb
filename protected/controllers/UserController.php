@@ -87,9 +87,7 @@ class UserController extends Controller
 
 		if(isset($_POST['User']))
 		{
-			$model->attributes=$_POST['User'];
-			// var_dump($model);
-			// die;  
+			$model->attributes=$_POST['User']; 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -192,7 +190,7 @@ class UserController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=User::model()->findByPk($id);
+		$model=User::model()->with('countries')->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -218,7 +216,7 @@ class UserController extends Controller
 	 */
 	public function actionSearch()
     {
-        $searchUser = CHttpRequest::getPost('search');
+        $searchUser = CHttpRequest::getParam('search');
         try {
             if (!empty($searchUser)) {
                 $user = new User('search');
@@ -231,4 +229,5 @@ class UserController extends Controller
 		echo 'ERRO' . $e->getMessage(); 		
 		}
 	} 
+
 }

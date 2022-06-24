@@ -16,7 +16,8 @@ $this->menu = array(
 );
 ?>
 
-<h1>View User #<?php echo $model->id; ?></h1>
+<h1>Visualizando usuário:  #<?php echo $model->id; ?></h1>
+
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data' => $model,
@@ -26,6 +27,7 @@ $this->menu = array(
 		'username',
 		'password',
 		'email',
+		['name' => 'countries.name', 'label' => 'País']
 	),
 )); ?>
 

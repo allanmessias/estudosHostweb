@@ -3,6 +3,7 @@
 <h1>Create Countries</h1>
 <?php $form = $this->beginWidget('CActiveForm', array(
     'enableClientValidation' => true,
+    'enableAjaxValidation' => true,
 ))?>
 
 <?php echo $form->errorSummary($model); ?>

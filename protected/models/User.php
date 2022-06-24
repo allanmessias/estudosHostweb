@@ -36,7 +36,7 @@ class User extends CActiveRecord
 		return array(
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('username, password, email', 'safe', 'on'=>'insert'),
+			array('username, password, email, paisid', 'safe', 'on'=>'insert'),
 		);
 	}
 
@@ -44,12 +44,11 @@ class User extends CActiveRecord
 	 * @return array relational rules.
 	 */
 	public function relations()
-	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
-		return array(
-		);
-	}
+    {
+        return array(
+            'countries'=>array(self::BELONGS_TO, 'Countries', 'paisid'),
+        );
+    }
 
 	/**
 	 * @return array customized attribute labels (name=>label)
@@ -57,6 +56,11 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'username' => 'Usuário',
+			'password' => 'Senha',
+			'email' => 'Email',
+			'paisid' => 'País'
+
 		);
 	}
 
