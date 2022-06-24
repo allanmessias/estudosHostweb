@@ -43,7 +43,7 @@ class CountriesController extends Controller
         $model = $service->create($country); 
         
         if ($model) {
-            Yii::app()->user->setFlash('success', 'País salvo com sucesso');
+          
             $this->redirect(array('countries/index'));
         } 
 
